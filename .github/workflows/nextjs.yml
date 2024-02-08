@@ -75,8 +75,6 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-      - name: Build with Next.js
-        run: npm run build
       - name: Print Location
         run: ls -la
       - name: Upload artifact
