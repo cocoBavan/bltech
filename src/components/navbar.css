@@ -1,0 +1,19 @@
+.foliox_tm_header.animate {
+  background-color: #1e1345;
+  padding: 30px 0;
+}
+
+.foliox_tm_header.animate .logo img {
+  max-width: 160px;
+}
+
+.foliox_tm_header .menu ul li.current a {
+  color: var(--extra-color);
+}
+
+.foliox_tm_header .social:before {
+  position: absolute;
+  content: "|";
+  left: -30px;
+  top: -2px;
+}

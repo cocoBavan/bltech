@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-color: #b4afc6;
+  --extra-color: #00c0ff;
+  --font-poppins: "Poppins", "sans-serif";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +16,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --tw-bg-opacity: 1;
   }
 }
 
@@ -25,5 +29,33 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.container {
+  position: relative;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+  max-width: 1400px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1070px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body {
+    font-size: 16px;
   }
 }

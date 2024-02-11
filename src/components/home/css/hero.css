@@ -1,0 +1,101 @@
+.foliox_tm_hero .right img {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.foliox_tm_hero .\!name {
+  margin-bottom: 14px;
+  font-size: 75px;
+}
+
+.foliox_tm_hero .job {
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.foliox_tm_hero .right .img {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+/***** Large ****/
+
+@media (max-width: 1600px) {
+  .foliox_tm_hero .name {
+    margin-bottom: 14px;
+    font-size: 75px;
+  }
+
+  .foliox_tm_hero .\!name {
+    margin-bottom: 14px;
+    font-size: 75px;
+  }
+
+  .foliox_tm_hero .job {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+
+  .foliox_tm_hero .right .img {
+    max-height: 400px;
+    max-width: 400px;
+  }
+}
+
+/***** Small ****/
+@media (max-width: 1040px) {
+  .foliox_tm_hero .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .foliox_tm_hero .right {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .foliox_tm_hero .right img {
+    display: inline-block;
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .foliox_tm_hero .left {
+    width: 100%;
+  }
+
+  .foliox_tm_hero .name {
+    margin-bottom: 12px;
+    font-size: 65px;
+  }
+
+  .foliox_tm_hero .\!name {
+    margin-bottom: 12px;
+    font-size: 65px;
+  }
+
+  .foliox_tm_hero .job {
+    margin-bottom: 35px;
+    font-size: 19px;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_hero .name {
+    margin-bottom: 8px;
+    font-size: 50px;
+  }
+
+  .foliox_tm_hero .\!name {
+    margin-bottom: 8px;
+    font-size: 50px;
+  }
+
+  .foliox_tm_hero .job {
+    font-size: 17px;
+  }
+}
