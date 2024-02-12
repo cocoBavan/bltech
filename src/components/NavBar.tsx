@@ -15,16 +15,17 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const NavBar = () => {
-  const [show, setShow] = useState(true);
+  const [showNavBarBG, setShowNavBarBG] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) {
-      // if scroll down hide the navbar
-      setShow(false);
+    //console.log(window.scrollY, lastScrollY);
+    if (window.scrollY > 20) {
+      // Web page goes up
+      setShowNavBarBG(true); // Make the
     } else {
-      // if scroll up show the navbar
-      setShow(true);
+      // if scroll up setshowNavBarBG the navbar
+      setShowNavBarBG(false);
     }
 
     // remember current page location to use in the next move
@@ -44,7 +45,7 @@ const NavBar = () => {
     <nav>
       <div
         className={`foliox_tm_header fixed top-0 left-0 right-0 z-[10] py-[45px] px-0 transition-all duration-300 ${
-          !show && "animate"
+          showNavBarBG && "animate"
         }`}
       >
         <div className="container">

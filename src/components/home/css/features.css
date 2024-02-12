@@ -1,0 +1,72 @@
+/***** Large ****/
+@media (max-width: 1600px) {
+  .foliox_tm_features .list ul li .title {
+    font-size: 21px;
+  }
+
+  .foliox_tm_features .\!list ul li .title {
+    font-size: 21px;
+  }
+}
+
+/***** Small ****/
+
+@media (max-width: 1040px) {
+  .foliox_tm_features .list ul li {
+    width: 50%;
+  }
+
+  .foliox_tm_features .\!list ul li {
+    width: 50%;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_features .list ul {
+    margin-left: 0px;
+  }
+
+  .foliox_tm_features .\!list ul {
+    margin-left: 0px;
+  }
+
+  .foliox_tm_features .list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .foliox_tm_features .\!list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .foliox_tm_features .list ul li .list_inner {
+    padding: 40px;
+  }
+
+  .foliox_tm_features .\!list ul li .list_inner {
+    padding: 40px;
+  }
+
+  .foliox_tm_features .list ul li .svg {
+    margin-bottom: 25px;
+    height: 55px;
+    width: 55px;
+  }
+
+  .foliox_tm_features .\!list ul li .svg {
+    margin-bottom: 25px;
+    height: 55px;
+    width: 55px;
+  }
+
+  .foliox_tm_features .list ul li .title {
+    margin-bottom: 18px;
+  }
+
+  .foliox_tm_features .\!list ul li .title {
+    margin-bottom: 18px;
+  }
+}

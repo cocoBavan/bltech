@@ -21,9 +21,18 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--main-color);
   background-color: rgb(30 19 69 / var(--tw-bg-opacity));
   background-image: url(/assets/img/hero/1.jpg);
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.text-main-color {
+  color: var(--main-color);
 }
 
 @layer utilities {
