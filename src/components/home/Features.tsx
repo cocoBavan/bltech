@@ -50,7 +50,7 @@ const FeaturesItem = ({
 }) => {
   return (
     <li className="mb-[50px] pl-[25px] w-1/3">
-      <Tilter>
+      <Tilter hasBg={true}>
         <div className="w-full h-auto clear-both relative bg-[#3a2b71] rounded-[10px] p-[60px]">
           {getIconFromName(iconName)}
           <h3 className="title text-[24px] mb-[20px]">{title}</h3>

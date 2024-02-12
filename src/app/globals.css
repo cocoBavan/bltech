@@ -35,6 +35,10 @@ body {
   color: var(--main-color);
 }
 
+.bg-extra-color {
+  background-color: var(--extra-color);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

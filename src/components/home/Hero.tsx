@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 import "./css/hero.css";
+import Tilter from "../common/Tilter";
+import { DefaultTilterProps } from "../common/Tilter";
 
 const Hero = () => {
   return (
@@ -27,14 +29,16 @@ const Hero = () => {
                 </div>
               </div>
               <div className="right w-1/2 pl-[80px]">
-                <Image
-                  style={{ objectFit: "contain" }}
-                  width={600}
-                  height={600}
-                  className="img tilt-effect max-w-[600px] max-h-[600px]"
-                  src="/assets/img/hero/avatar.png"
-                  alt=""
-                />
+                <Tilter>
+                  <Image
+                    style={{ objectFit: "contain" }}
+                    width={600}
+                    height={600}
+                    className="img tilt-effect max-w-[600px] max-h-[600px]"
+                    src="/assets/img/hero/avatar.png"
+                    alt=""
+                  />
+                </Tilter>
               </div>
             </div>
           </div>

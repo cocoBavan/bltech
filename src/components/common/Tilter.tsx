@@ -6,7 +6,12 @@ import { motion } from "framer-motion";
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const Tilter = ({ children }) => {
+interface TilterProps {
+  hasBg?: boolean;
+  children: React.ReactNode;
+}
+
+const Tilter = ({ hasBg = false, children }: TilterProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const [rotateX, setRotateX] = useState(0);
@@ -26,8 +31,8 @@ const Tilter = ({ children }) => {
     const rY = mouseX / width - HALF_ROTATION_RANGE;
     const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
 
-    setRotateX(rX);
-    setRotateY(rY);
+    setRotateX(-rX);
+    setRotateY(-rY);
   };
 
   const handleMouseLeave = () => {
@@ -48,11 +53,13 @@ const Tilter = ({ children }) => {
         rotateX,
         rotateY,
       }}
-      className="relative rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
+      className={`relative rounded-xl ${
+        hasBg ? "bg-gradient-to-br from-indigo-300 to-violet-300" : ""
+      } `}
     >
       <div
         style={{
-          transform: "translateZ(75px)",
+          transform: "translateZ(10px)",
           transformStyle: "preserve-3d",
         }}
       >
