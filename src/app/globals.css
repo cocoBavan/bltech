@@ -21,9 +21,22 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--main-color);
   background-color: rgb(30 19 69 / var(--tw-bg-opacity));
   background-image: url(/assets/img/hero/1.jpg);
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.text-main-color {
+  color: var(--main-color);
+}
+
+.bg-extra-color {
+  background-color: var(--extra-color);
 }
 
 @layer utilities {
@@ -44,6 +57,66 @@ body {
   padding-bottom: 0px;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 100;
+  background-color: var(--extra-color);
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  will-change: transform, box-shadow, z-index;
+}
+
+.cursor-inner.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--extra-color);
+  opacity: 0.3;
+}
+
+.cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--extra-color);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 100;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  will-change: transform, box-shadow, z-index;
+}
+
+.cursor-outer.cursor-hover {
+  opacity: 0;
+}
+
+.foliox_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1111;
 }
 
 @media (max-width: 1600px) {

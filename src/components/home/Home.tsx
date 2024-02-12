@@ -12,24 +12,26 @@ import Skills from "@/components/home/Skills";
 import Subscribe from "@/components/home/Subscribe";
 import Testimonials from "@/components/home/Testimonials";
 
+import "./css/home.css";
+
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <Features/>
-        <About/>
-        <Counter/>
-        <Skills/>
-        <Services/>
-        <Resume/>
-        <Portfolio/>
-        <Testimonials/>
-        <Partners/>
-        <News/>
-        <Contact/>
-        <Subscribe/>
+      <Hero />
+      <Features />
+      <About />
+      <Counter />
+      <Skills />
+      <Services />
+      <Resume />
+      <Portfolio />
+      <Testimonials />
+      <Partners />
+      <News />
+      <Contact />
+      <Subscribe />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,0 +1,127 @@
+.foliox_tm_about .foliox_tm_button a {
+  padding: 13px 43px;
+}
+
+.foliox_tm_about .experience .inner:before {
+  width: 10px;
+  height: 110px;
+  position: absolute;
+  content: "";
+  background-color: var(--extra-color);
+  left: 0;
+}
+
+.foliox_tm_about .right .list > ul {
+  min-width: calc(100% + 12px);
+}
+
+@media (max-width: 1600px) {
+  .foliox_tm_about .big_image img {
+    max-width: 380px;
+  }
+
+  .foliox_tm_about .small_image {
+    margin-right: -145px;
+  }
+
+  .foliox_tm_about .small_image .in img {
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .foliox_tm_about .experience .inner h3 {
+    font-size: 45px;
+  }
+
+  .foliox_tm_about .experience .inner span {
+    padding-left: 14px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .foliox_tm_about .experience .inner {
+    padding-left: 22px;
+  }
+
+  .foliox_tm_about .experience {
+    left: 165px;
+    margin-top: 20px;
+  }
+
+  .foliox_tm_about .badge {
+    top: 105px;
+    height: 90px;
+    width: 90px;
+  }
+
+  .foliox_tm_about .badge .svg {
+    height: 45px;
+    width: 45px;
+  }
+
+  .foliox_tm_about .right {
+    top: 15px;
+    padding-left: 50px;
+  }
+
+  .foliox_tm_about .right .item li {
+    margin-bottom: 7px;
+  }
+
+  .foliox_tm_about .right .\!item li {
+    margin-bottom: 7px;
+  }
+
+  .foliox_tm_about .right .title {
+    margin-bottom: 20px;
+  }
+
+  .foliox_tm_about .experience .inner:before {
+    width: 8px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .foliox_tm_about .badge {
+    display: none;
+  }
+
+  .foliox_tm_about .experience {
+    display: none;
+  }
+
+  .foliox_tm_about .small_image .in {
+    display: none;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_about .right .list > ul > li {
+    width: 100%;
+    border-width: 0px;
+  }
+
+  .foliox_tm_about .right .\!list > ul > li {
+    width: 100%;
+    border-width: 0px;
+  }
+
+  .foliox_tm_about .right .item:first-child {
+    padding-bottom: 0px;
+  }
+
+  .foliox_tm_about .right .\!item:first-child {
+    padding-bottom: 0px;
+  }
+
+  .foliox_tm_about .right .list > ul {
+    padding-bottom: 25px;
+  }
+
+  .foliox_tm_about .right .\!list > ul {
+    padding-bottom: 25px;
+  }
+}
