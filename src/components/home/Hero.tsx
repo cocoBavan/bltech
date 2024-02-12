@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import "./css/hero.css";
 import Tilter from "../common/Tilter";
-import { DefaultTilterProps } from "../common/Tilter";
 
 const Hero = () => {
   return (
