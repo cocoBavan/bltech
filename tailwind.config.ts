@@ -7,9 +7,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      large: { max: "1600px" },
+      middle: { max: "1200px" },
+      small: { max: "1040px" },
+      tablet: { max: "768px" },
+      phone: { max: "480px" },
+    },
     fontFamily: {
-      poppins: ['Poppins', "sans-serif"],
-      opensans: ['Open Sans', "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
+      opensans: ["Open Sans", "sans-serif"],
     },
     extend: {
       backgroundImage: {
