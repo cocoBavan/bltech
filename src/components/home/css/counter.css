@@ -1,0 +1,54 @@
+/***** Large ****/
+
+@media (max-width: 1600px) {
+  .foliox_tm_counter .counter_list ul li h3 {
+    font-size: 55px;
+  }
+
+  .foliox_tm_counter .counter_list ul li .title {
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .foliox_tm_counter .counter_list ul li .list_inner {
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+  }
+}
+
+/***** Small ****/
+
+@media (max-width: 1040px) {
+  .foliox_tm_counter .counter_list ul li {
+    width: 33.333333%;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_counter .counter_list ul li {
+    width: 50%;
+  }
+}
+
+/***** Phone ****/
+@media (max-width: 480px) {
+  .foliox_tm_counter .counter_list ul {
+    margin: 0px;
+  }
+
+  .foliox_tm_counter .counter_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .foliox_tm_counter .counter_list ul li .list_inner {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}

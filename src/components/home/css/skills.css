@@ -1,0 +1,78 @@
+.progress_inner {
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+.progress_inner:last-child {
+  margin-bottom: 0;
+}
+
+.progress_inner > span {
+  margin: 0 0 9px 0;
+  display: block;
+  text-align: left;
+  position: relative;
+}
+
+.progress_inner span.label {
+  opacity: 0;
+  transform: translateY(10px);
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.progress_inner span.label.opened {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.progress_inner span.number {
+  float: right;
+  position: absolute;
+  right: 100%;
+  bottom: -2px;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: var(--extra-color);
+  font-size: 18px;
+  font-family: var(--font-poppins);
+}
+
+.progress_inner .background {
+  background: #e7e5f1;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  height: 8px;
+  border-radius: 50px;
+}
+
+.progress_inner .background .bar_in {
+  height: 8px;
+  width: 0;
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: relative;
+  top: 0;
+  background-color: var(--extra-color);
+}
+
+.progress_inner .background .bar {
+  width: 0;
+  height: 100%;
+}
+
+.progress_inner .background .bar.open {
+  -webkit-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
