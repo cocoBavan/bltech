@@ -1,0 +1,89 @@
+/***** Large ****/
+@media (max-width: 1600px) {
+  .foliox_tm_services .list ul li .title {
+    font-size: 21px;
+  }
+
+  .foliox_tm_services .\!list ul li .title {
+    font-size: 21px;
+  }
+
+  .foliox_tm_services .list ul li .icon {
+    margin-bottom: 35px;
+  }
+
+  .foliox_tm_services .\!list ul li .icon {
+    margin-bottom: 35px;
+  }
+
+  .foliox_tm_services .list ul li .list_inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 95px;
+    padding-bottom: 60px;
+  }
+
+  .foliox_tm_services .\!list ul li .list_inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 95px;
+    padding-bottom: 60px;
+  }
+}
+
+/***** Small ****/
+
+@media (max-width: 1040px) {
+  .foliox_tm_services .list ul li {
+    width: 50%;
+  }
+
+  .foliox_tm_services .\!list ul li {
+    width: 50%;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_services .list ul {
+    margin: 0px;
+  }
+
+  .foliox_tm_services .\!list ul {
+    margin: 0px;
+  }
+
+  .foliox_tm_services .list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .foliox_tm_services .\!list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .\!.foliox_tm_services .list ul li .icon .svg {
+    height: 55px;
+    width: 55px;
+  }
+
+  .foliox_tm_services .list ul li .icon .svg {
+    height: 55px;
+    width: 55px;
+  }
+
+  .foliox_tm_services .\!list ul li .icon .svg {
+    height: 55px;
+    width: 55px;
+  }
+
+  .foliox_tm_services .list ul li .icon {
+    margin-bottom: 33px;
+  }
+
+  .foliox_tm_services .\!list ul li .icon {
+    margin-bottom: 33px;
+  }
+}

@@ -87,6 +87,10 @@ h6 {
   fill: var(--extra-color);
 }
 
+.fill-white-color {
+  fill: #fff;
+}
+
 /***** Tablet ****/
 
 @media (max-width: 768px) {
