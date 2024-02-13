@@ -1,0 +1,62 @@
+.resume_list ul:before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  bottom: 0;
+  left: 36px;
+  width: 1px;
+  background-color: #5d5e82;
+}
+
+/***** Small ****/
+
+@media (max-width: 1040px) {
+  .foliox_tm_resume .wrapper {
+    flex-direction: column;
+  }
+
+  .foliox_tm_resume .left {
+    margin-bottom: 70px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .foliox_tm_resume .right {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_resume .title h3 {
+    font-size: 30px;
+  }
+
+  .resume_list ul li .icon {
+    height: 65px;
+    width: 65px;
+  }
+
+  .resume_list ul li .icon .svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .resume_list ul:before {
+    left: 32.5px;
+  }
+
+  .resume_list ul li .list_inner {
+    padding-left: 95px;
+  }
+
+  .resume_list .resume_title h3 {
+    font-size: 22px;
+  }
+}
+
+.foliox_tm_resume .text {
+  font-family: var(--font-opensans);
+}

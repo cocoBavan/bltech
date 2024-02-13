@@ -1,0 +1,28 @@
+.foliox_tm_portfolio .portfolio_filter ul li a.current {
+  color: var(--extra-color);
+}
+
+.foliox_tm_portfolio .portfolio_list ul li .list_inner:hover .details {
+  transform: translateY(0);
+}
+
+/***** Small ****/
+
+@media (max-width: 1040px) {
+  .foliox_tm_portfolio .portfolio_list ul li {
+    width: 50%;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_portfolio .portfolio_list ul {
+    margin: 0px;
+  }
+
+  .foliox_tm_portfolio .portfolio_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
