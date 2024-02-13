@@ -146,7 +146,7 @@ const Services = () => {
           <div className="list w-full h-auto clear-both float-left mt-[70px]">
             <ul className="ml-[-25px] flex flex-wrap">
               {services.map((d) => (
-                <li className="mb-[25px] pl-[25px] w-1/3">
+                <li key={d.title} className="mb-[25px] pl-[25px] w-1/3">
                   <ServicesCard info={d} />
                 </li>
               ))}
