@@ -61,7 +61,7 @@ const Skills = () => {
                 data-wow-duration="1s"
               >
                 {leftSkills.map((d) => (
-                  <SkillItem skill={d} />
+                  <SkillItem key={d.title} skill={d} />
                 ))}
               </div>
             </div>
@@ -71,7 +71,7 @@ const Skills = () => {
                 data-wow-duration="1s"
               >
                 {rightSkills.map((d) => (
-                  <SkillItem skill={d} />
+                  <SkillItem key={d.title} skill={d} />
                 ))}
               </div>
             </div>
