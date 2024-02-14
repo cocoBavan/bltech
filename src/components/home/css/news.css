@@ -1,0 +1,31 @@
+.foliox_tm_news .news_list ul li .title a:hover {
+  color: var(--extra-color);
+}
+
+/***** Large ****/
+
+@media (max-width: 1600px) {
+  .foliox_tm_news .news_list ul li .title a {
+    font-size: 19px;
+  }
+}
+
+/***** Small ****/
+
+@media (max-width: 1040px) {
+  .foliox_tm_news .news_list ul li {
+    width: 50%;
+  }
+}
+
+/***** Tablet ****/
+
+@media (max-width: 768px) {
+  .foliox_tm_news .news_list ul {
+    margin: 0px;
+  }
+  .foliox_tm_news .news_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+}

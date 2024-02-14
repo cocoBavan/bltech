@@ -28,8 +28,6 @@ const Home = () => {
       <Testimonials />
       <Partners />
       <News />
-      <Contact />
-      <Subscribe />
     </div>
   );
 };
