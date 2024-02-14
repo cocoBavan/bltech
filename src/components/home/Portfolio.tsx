@@ -47,37 +47,37 @@ const PortfolioCard = ({ item }: { item: PortfolioItem }) => {
 const items: PortfolioItem[] = [
   {
     imageUrl: "/assets/img/portfolio/1.jpg",
-    title: "Axe Droow",
+    title: "Axe Droow 1",
     subtitle: "Youtube",
     portfolioLink: "https://www.youtube.com/watch?v=7e90gBu4pas",
   },
   {
     imageUrl: "/assets/img/portfolio/2.jpeg",
-    title: "Axe Droow",
+    title: "Axe Droow 2",
     subtitle: "Youtube",
     portfolioLink: "https://www.youtube.com/watch?v=7e90gBu4pas",
   },
   {
     imageUrl: "/assets/img/portfolio/3.jpeg",
-    title: "Axe Droow",
+    title: "Axe Droow 3",
     subtitle: "Youtube",
     portfolioLink: "https://www.youtube.com/watch?v=7e90gBu4pas",
   },
   {
     imageUrl: "/assets/img/portfolio/4.jpeg",
-    title: "Axe Droow",
+    title: "Axe Droow 4",
     subtitle: "Youtube",
     portfolioLink: "https://www.youtube.com/watch?v=7e90gBu4pas",
   },
   {
     imageUrl: "/assets/img/portfolio/5.jpeg",
-    title: "Axe Droow",
+    title: "Axe Droow 5",
     subtitle: "Youtube",
     portfolioLink: "https://www.youtube.com/watch?v=7e90gBu4pas",
   },
   {
     imageUrl: "/assets/img/portfolio/6.jpeg",
-    title: "Axe Droow",
+    title: "Axe Droow 6",
     subtitle: "Youtube",
     portfolioLink: "https://www.youtube.com/watch?v=7e90gBu4pas",
   },

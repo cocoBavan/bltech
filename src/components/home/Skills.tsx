@@ -19,7 +19,7 @@ const leftSkills: Skill[] = [
 const rightSkills: Skill[] = [
   { title: "React", percentage: 95 },
   { title: "HTML", percentage: 89 },
-  { title: "HTML", percentage: 55 },
+  { title: "Node", percentage: 55 },
 ];
 
 const SkillItem = ({ skill }: { skill: Skill }) => {
