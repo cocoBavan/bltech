@@ -11,15 +11,15 @@ interface Skill {
 }
 
 const leftSkills: Skill[] = [
-  { title: "HTML", percentage: 95 },
-  { title: "CSS", percentage: 78 },
-  { title: "Kotlin", percentage: 56 },
+  { title: "Kotlin", percentage: 95 },
+  { title: "Swift", percentage: 90 },
+  { title: "Android", percentage: 90 },
 ];
 
 const rightSkills: Skill[] = [
-  { title: "React", percentage: 95 },
+  { title: "iOS", percentage: 90 },
   { title: "HTML", percentage: 89 },
-  { title: "Node", percentage: 55 },
+  { title: "CSS", percentage: 55 },
 ];
 
 const SkillItem = ({ skill }: { skill: Skill }) => {

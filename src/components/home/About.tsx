@@ -90,7 +90,7 @@ const About = () => {
                         <span className="font-poppins text-[16px] font-medium text-white inline-block">
                           Name
                         </span>
-                        <p className="text-[16px]">Alan Walker</p>
+                        <p className="text-[16px]">Bavan Palan</p>
                       </li>
                       <li className="mb-[11px]">
                         <span className="font-poppins text-[16px] font-medium text-white inline-block">
@@ -98,7 +98,7 @@ const About = () => {
                         </span>
                         <p className="text-[16px]">
                           <Link className="text-main-color" href="#">
-                            hello@foliox.com
+                            bavan@bltechconsult.com.au
                           </Link>
                         </p>
                       </li>
@@ -106,7 +106,7 @@ const About = () => {
                         <span className="font-poppins text-[16px] font-medium text-white inline-block">
                           Phone
                         </span>
-                        <p className="text-[16px]">+123 456 7890</p>
+                        <p className="text-[16px]">+61 452 459</p>
                       </li>
                     </ul>
                   </li>
@@ -116,17 +116,17 @@ const About = () => {
                         <span className="font-poppins text-[16px] font-medium text-white inline-block">
                           Address
                         </span>
-                        <p className="text-[16px]">20, Bordeshi, Dhaka</p>
+                        <p className="text-[16px]">20, Quakers Rd, Sydney</p>
                       </li>
                       <li className="mb-[11px]">
                         <span className="font-poppins text-[16px] font-medium text-white inline-block">
                           Degree
                         </span>
-                        <p className="text-[16px]">Master</p>
+                        <p className="text-[16px]">BSc Eng</p>
                       </li>
                       <li>
                         <span className="font-poppins text-[16px] font-medium text-white inline-block">
-                          Freelance
+                          Contract
                         </span>
                         <p className="text-[16px]">Available</p>
                       </li>
