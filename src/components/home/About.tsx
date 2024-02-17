@@ -85,8 +85,8 @@ const About = () => {
                     a strong foundation in UI/UX design and a passion for
                     innovation, I thrive in turning ideas into reality. My goal
                     is to create impactful solutions that delight users and
-                    drive business growth. Let's connect and build something
-                    amazing together!
+                    drive business growth. Let&apos;s connect and build
+                    something amazing together!
                   </p>
                   <div className="list w-full clear-both float-left overflow-hidden rounded-[10px] border-solid border-[#625a7d] border-2 mt-[32px] mb-[40px]">
                     <ul className="mt-[-2px] mr-[-10px] mb-[-2px] ml-[-2px] pt-[2px] float-left pl-[2px]">
