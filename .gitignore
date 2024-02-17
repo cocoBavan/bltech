@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+public/assets/img/logo/logo.psd
+public/assets/img/logo/logo2.psd
+logo.psd

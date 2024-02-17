@@ -19,10 +19,13 @@ const Hero = () => {
                   Bavan <span className="text-extra-color">Palan</span>
                 </h3>
                 <p className="job text-white text-[23px] font-medium font-poppins mb-[50px]">
-                  Mobile Developer based In Sydney
+                  App Developer based In Sydney
                 </p>
                 <div className="foliox_tm_button">
-                  <a className="anchor" href="#contact">
+                  <a
+                    className="anchor"
+                    href="https://www.linkedin.com/in/bavan-palan-83906555/"
+                  >
                     <span>Get Connected</span>
                   </a>
                 </div>

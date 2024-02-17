@@ -1,26 +1,35 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import "./css/counter.css";
 import Tilter from "../common/Tilter";
+import CountUp from "react-countup";
+import { useInView } from "framer-motion";
 
 interface CounterItem {
   title: string;
-  count: number | string;
+  count: number;
 }
 
 const CounterCard = ({ item }: { item: CounterItem }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <li className="mb-[50px] pl-[25px] w-1/4 ">
       <Tilter hasBg={true}>
-        <div className="list_inner tilt-effect w-full h-auto clear-both  relative bg-[#432d92] rounded-[10px] p-[70px] flex items-center justify-center">
+        <div
+          ref={ref}
+          className="list_inner tilt-effect w-full h-auto clear-both  relative bg-[#432d92] rounded-[10px] p-[70px] flex items-center justify-center"
+        >
           <h3 className="text-[60px] text-extra-color">
-            <span
-              className="tm_counter"
-              data-from="0"
-              data-to="20"
-              data-speed="2000"
-            >
-              {item.count}
-            </span>
+            {isInView && (
+              <CountUp start={0} end={item.count} delay={0.5}>
+                {({ countUpRef, start }) => (
+                  <span className="tm_counter" ref={countUpRef} />
+                )}
+              </CountUp>
+            )}
+            {!isInView && <span className="tm_counter">0</span>}
           </h3>
           <span className="title text-[18px] text-white font-poppins font-medium inline-block pl-[26px]">
             {item.title}
@@ -38,10 +47,10 @@ const Counter = () => {
         <div className="container">
           <div className="counter_list w-full h-auto clear-both">
             <ul className="ml-[-25px] flex flex-wrap">
-              <CounterCard item={{ title: "Digital Products", count: 0 }} />
-              <CounterCard item={{ title: "Direct Clients", count: 0 }} />
-              <CounterCard item={{ title: "Total Projects", count: "0K" }} />
-              <CounterCard item={{ title: "Awards Win", count: 0 }} />
+              <CounterCard item={{ title: "Digital Products", count: 6 }} />
+              <CounterCard item={{ title: "Direct Clients", count: 15 }} />
+              <CounterCard item={{ title: "Total Projects", count: 25 }} />
+              <CounterCard item={{ title: "Years Experience", count: 12 }} />
             </ul>
           </div>
         </div>

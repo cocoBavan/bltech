@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 
 import "./css/skills.css";
 import ProgressBar from "@ramonak/react-progress-bar";
+import CountUp from "react-countup";
+import { useInView } from "framer-motion";
 
 interface Skill {
   title: string;
@@ -23,20 +25,42 @@ const rightSkills: Skill[] = [
 ];
 
 const SkillItem = ({ skill }: { skill: Skill }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="progress_inner" data-value="95">
+    <div ref={ref} className="progress_inner" data-value="95">
       <span>
         <span className="label opened">{skill.title}</span>
         <span className="number" style={{ right: "5%" }}>
-          {skill.percentage}%
+          {isInView && (
+            <CountUp start={0} end={skill.percentage}>
+              {({ countUpRef, start }) => (
+                <span className="tm_counter" ref={countUpRef} />
+              )}
+            </CountUp>
+          )}
+          {!isInView && 0}%
         </span>
       </span>
-      <ProgressBar
-        height="8px"
-        completed={skill.percentage}
-        isLabelVisible={false}
-        bgColor="#00c0ff"
-      />
+      {isInView && (
+        <ProgressBar
+          height="8px"
+          animateOnRender={true}
+          completed={skill.percentage}
+          isLabelVisible={false}
+          bgColor="#00c0ff"
+        />
+      )}
+      {!isInView && (
+        <ProgressBar
+          height="8px"
+          animateOnRender={true}
+          completed={0}
+          isLabelVisible={false}
+          bgColor="#00c0ff"
+        />
+      )}
     </div>
   );
 };
