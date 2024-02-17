@@ -66,8 +66,8 @@ const Features = () => {
   return (
     <div className="foliox_tm_section w-full h-auto clear-both float-left">
       <div className="foliox_tm_features w-full h-auto clear-both float-left mb-[113px]">
-        <div className="container">
-          <Reveal>
+        <Reveal>
+          <div className="container">
             <div className="list w-full h-auto clear-both float-left relative">
               <ul className="ml-[-25px] flex flex-wrap">
                 <FeaturesItem
@@ -93,8 +93,8 @@ const Features = () => {
                 />
               </ul>
             </div>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </div>
     </div>
   );

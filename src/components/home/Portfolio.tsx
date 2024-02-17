@@ -5,6 +5,7 @@ import Link from "next/link";
 import "./css/portfolio.css";
 import Tilter from "../common/Tilter";
 import { it } from "node:test";
+import Reveal from "../common/Reveal";
 
 interface PortfolioItem {
   imageUrl: string;
@@ -91,26 +92,28 @@ const Portfolio = () => {
   return (
     <div className="foliox_tm_section w-full h-auto clear-both" id="portfolio">
       <div className="foliox_tm_portfolio w-full h-auto clear-both  mb-[150px]">
-        <div className="container">
-          <div className="foliox_tm_main_title w-full max-w-[650px] h-auto clear-both my-0 mx-auto text-center">
-            <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
-              Portfolio
-            </span>
-            <h3 className="text-[48px]">What I Do for My Clients</h3>
+        <Reveal>
+          <div className="container">
+            <div className="foliox_tm_main_title w-full max-w-[650px] h-auto clear-both my-0 mx-auto text-center">
+              <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
+                Portfolio
+              </span>
+              <h3 className="text-[48px]">What I Do for My Clients</h3>
+            </div>
+            <div className="portfolio_filter w-full h-auto clear-both text-center mt-[60px] mb-[55px]"></div>
+            <div
+              className="portfolio_list wow fadeInUp w-full h-auto clear-both"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <ul className="gallery_zoom ml-[-13px] flex flex-wrap">
+                {items.map((d) => (
+                  <PortfolioCard key={d.title} item={d} />
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="portfolio_filter w-full h-auto clear-both text-center mt-[60px] mb-[55px]"></div>
-          <div
-            className="portfolio_list wow fadeInUp w-full h-auto clear-both"
-            data-wow-duration="1s"
-            data-wow-delay="0.2s"
-          >
-            <ul className="gallery_zoom ml-[-13px] flex flex-wrap">
-              {items.map((d) => (
-                <PortfolioCard key={d.title} item={d} />
-              ))}
-            </ul>
-          </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );

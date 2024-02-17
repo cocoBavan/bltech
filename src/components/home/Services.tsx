@@ -12,6 +12,7 @@ import CodeSVG from "../common/svg/CodeSVG";
 import CameraSVG from "../common/svg/CameraSVG";
 
 import "./css/services.css";
+import Reveal from "../common/Reveal";
 
 type ServiceIcon =
   | "monitor"
@@ -146,23 +147,25 @@ const Services = () => {
       id="service"
     >
       <div className="foliox_tm_services w-full h-auto clear-both float-left mb-[110px]">
-        <div className="container">
-          <div className="foliox_tm_main_title w-full max-w-[650px] h-auto clear-both my-0 mx-auto text-center">
-            <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
-              Services
-            </span>
-            <h3 className="text-[48px]">What I Do for My Clients</h3>
+        <Reveal>
+          <div className="container">
+            <div className="foliox_tm_main_title w-full max-w-[650px] h-auto clear-both my-0 mx-auto text-center">
+              <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
+                Services
+              </span>
+              <h3 className="text-[48px]">What I Do for My Clients</h3>
+            </div>
+            <div className="list w-full h-auto clear-both float-left mt-[70px]">
+              <ul className="ml-[-25px] flex flex-wrap">
+                {services.map((d) => (
+                  <li key={d.title} className="mb-[25px] pl-[25px] w-1/3">
+                    <ServicesCard info={d} />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="list w-full h-auto clear-both float-left mt-[70px]">
-            <ul className="ml-[-25px] flex flex-wrap">
-              {services.map((d) => (
-                <li key={d.title} className="mb-[25px] pl-[25px] w-1/3">
-                  <ServicesCard info={d} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );
