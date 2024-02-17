@@ -5,6 +5,7 @@ import CaseSVG from "../common/svg/CaseSVG";
 import SettingsSVG from "../common/svg/SettingsSVG";
 import DiamondSVG from "../common/svg/DiamondSVG";
 import Tilter from "../common/Tilter";
+import Reveal from "../common/Reveal";
 
 type Icons = "settings" | "diamond" | "case";
 
@@ -65,33 +66,35 @@ const Features = () => {
   return (
     <div className="foliox_tm_section w-full h-auto clear-both float-left">
       <div className="foliox_tm_features w-full h-auto clear-both float-left mb-[113px]">
-        <div className="container">
-          <div className="list w-full h-auto clear-both float-left relative">
-            <ul className="ml-[-25px] flex flex-wrap">
-              <FeaturesItem
-                title={"Deeper Skillset"}
-                detail={
-                  "Kobita tumi sopno charini hodsye ersest labo met, consectetur addsipi ctetur adipisicing eod tempor"
-                }
-                iconName="settings"
-              />
-              <FeaturesItem
-                title={"Creative Work"}
-                detail={
-                  "Kobita tumi sopno charini hodsye ersest labo met, consectetur addsipi ctetur adipisicing eod tempor"
-                }
-                iconName="case"
-              />
-              <FeaturesItem
-                title={"Strong Dedication"}
-                detail={
-                  "Kobita tumi sopno charini hodsye ersest labo met, consectetur addsipi ctetur adipisicing eod tempor"
-                }
-                iconName="diamond"
-              />
-            </ul>
+        <Reveal>
+          <div className="container">
+            <div className="list w-full h-auto clear-both float-left relative">
+              <ul className="ml-[-25px] flex flex-wrap">
+                <FeaturesItem
+                  title={"Deeper Skillset"}
+                  detail={
+                    "Mobile & Web App Development and including backend, with seamless user experiences"
+                  }
+                  iconName="settings"
+                />
+                <FeaturesItem
+                  title={"Creative Work"}
+                  detail={
+                    "Innovative app designs and concepts, showcasing creativity, user-centricity, and attention to detail."
+                  }
+                  iconName="case"
+                />
+                <FeaturesItem
+                  title={"Strong Dedication"}
+                  detail={
+                    "With a relentless pursuit of excellence, I ensure high-quality results and client satisfaction."
+                  }
+                  iconName="diamond"
+                />
+              </ul>
+            </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );

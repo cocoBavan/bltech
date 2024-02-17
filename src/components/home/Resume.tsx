@@ -10,49 +10,48 @@ interface ResumeItem {
 
 const experienceLeft: ResumeItem[] = [
   {
-    title: "UI/UX Designer",
-    period: "2018 - Present",
-    company: "Easy Computers",
+    title: "Senior Consultant",
+    period: "2023 - Present",
+    company: "Pfizer Inc",
     achievement:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur khobor niona.",
+      "Ported acquired company assets to Pfizer Standards, involving Kotlin, gradle & C++",
   },
   {
-    title: "Web Designer",
-    period: "2016 - 2018",
-    company: "Design Hub",
+    title: "Senior Consultant",
+    period: "2021 - 2023",
+    company: "HSBC",
     achievement:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur khobor niona.",
+      "Added Manage Payments & Scheduled Payments features to their apps.",
   },
   {
-    title: "Graphic Designer",
-    period: "2012 - 2016",
-    company: "Vivaco Studio",
+    title: "Senior Consultant",
+    period: "2020 - 2021",
+    company: "Macquarie Bank",
     achievement:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur khobor niona.",
+      "Migrated many app features to new designs using Kotlin & Compose.",
   },
 ];
 
 const experienceRight: ResumeItem[] = [
   {
-    title: "UI/UX Designer",
-    period: "2018 - Present",
-    company: "Easy Computers",
+    title: "Senior Consultant",
+    period: "2019 - 2020",
+    company: "UBank",
     achievement:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur khobor niona.",
+      "Developed a complete bank app from scratch and released it using Kotlin",
   },
   {
-    title: "Web Designer",
-    period: "2016 - 2018",
-    company: "Design Hub",
+    title: "Senior Consultant",
+    period: "2018 - 2019",
+    company: "Deloitte",
     achievement:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur khobor niona.",
+      "Worked with multiple clients including Coles, Link and Telstra.",
   },
   {
-    title: "Graphic Designer",
-    period: "2012 - 2016",
-    company: "Vivaco Studio",
-    achievement:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur khobor niona.",
+    title: "Tech Lead",
+    period: "2013 - 2018",
+    company: "Fetch TV",
+    achievement: "Led the front end Team with frequent successful deliveries.",
   },
 ];
 
@@ -113,7 +112,7 @@ const Resume = () => {
             </div>
             <div className="right w-1/2 pl-[50px]">
               <div className="title w-full float-left mb-[60px]">
-                <h3 className="text-[36px]">Education</h3>
+                <h3 className="text-[36px] opacity-0">Education</h3>
               </div>
               <div className="resume_list w-full float-left">
                 <ul className="relative float-left">

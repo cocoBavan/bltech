@@ -16,13 +16,16 @@ const Hero = () => {
             <div className="content h-[100vh] flex items-center">
               <div className="left w-1/2">
                 <h3 className="name text-[120px] leading-[1.1] mb-[25px]">
-                  James <span className="text-extra-color">Smith</span>
+                  Bavan <span className="text-extra-color">Palan</span>
                 </h3>
                 <p className="job text-white text-[23px] font-medium font-poppins mb-[50px]">
-                  Web Designer based In New York
+                  App Developer based In Sydney
                 </p>
                 <div className="foliox_tm_button">
-                  <a className="anchor" href="#contact">
+                  <a
+                    className="anchor"
+                    href="https://www.linkedin.com/in/bavan-palan-83906555/"
+                  >
                     <span>Get Connected</span>
                   </a>
                 </div>

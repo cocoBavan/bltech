@@ -9,10 +9,19 @@ import BarSVG from "../common/svg/BarSVG";
 import AimSVG from "../common/svg/AimSVG";
 import AvatarSVG from "../common/svg/AvatarSVG";
 import CodeSVG from "../common/svg/CodeSVG";
+import CameraSVG from "../common/svg/CameraSVG";
 
 import "./css/services.css";
+import Reveal from "../common/Reveal";
 
-type ServiceIcon = "monitor" | "anchor" | "bar" | "aim" | "avatar" | "code";
+type ServiceIcon =
+  | "monitor"
+  | "anchor"
+  | "bar"
+  | "aim"
+  | "avatar"
+  | "code"
+  | "camera";
 
 interface ServiceInfo {
   icon: ServiceIcon;
@@ -22,40 +31,40 @@ interface ServiceInfo {
 
 const services: ServiceInfo[] = [
   {
-    icon: "monitor",
-    title: "Website Design",
+    icon: "code",
+    title: "App Development",
     detail:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor",
+      "Crafting innovative mobile applications tailored to your needs, ensuring seamless user experiences across platforms.",
   },
   {
-    icon: "anchor",
-    title: "Graphic Design",
+    icon: "monitor",
+    title: "Web Development",
     detail:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor",
+      "Building responsive websites with cutting-edge technologies, optimizing for speed, security, and user engagement.",
   },
   {
     icon: "bar",
-    title: "Digital Markerting",
+    title: "Graphic Design",
     detail:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor",
+      "Creating visually stunning graphics that communicate your brand message effectively and leave a lasting impression",
   },
   {
     icon: "aim",
-    title: "Photography",
+    title: "Digital Marketing",
     detail:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor",
+      "Driving brand visibility and engagement through targeted digital strategies, including SEO, SEM, and social media marketing",
   },
   {
     icon: "avatar",
     title: "Consultancy",
     detail:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor",
+      "Providing expert guidance on cybersecurity and technology, ensuring your digital assets are secure and optimized.",
   },
   {
-    icon: "code",
-    title: "Web Development",
+    icon: "camera",
+    title: "Content Making",
     detail:
-      "Kobita tumi sopno charini hoye ersest labo met, consectetur adipi ctetur adipisicing eod tempor",
+      "Capturing compelling visuals that tell your story and resonate with your audience, enhancing your brand presence.",
   },
 ];
 
@@ -83,6 +92,8 @@ const getIconFromName = (iconName: ServiceIcon, isHovered: boolean) => {
       return <AvatarSVG {...defaultSVGParams(isHovered)} />;
     case "code":
       return <CodeSVG {...defaultSVGParams(isHovered)} />;
+    case "camera":
+      return <CameraSVG {...defaultSVGParams(isHovered)} />;
   }
 };
 
@@ -136,23 +147,25 @@ const Services = () => {
       id="service"
     >
       <div className="foliox_tm_services w-full h-auto clear-both float-left mb-[110px]">
-        <div className="container">
-          <div className="foliox_tm_main_title w-full max-w-[650px] h-auto clear-both my-0 mx-auto text-center">
-            <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
-              Services
-            </span>
-            <h3 className="text-[48px]">What I Do for My Clients</h3>
+        <Reveal>
+          <div className="container">
+            <div className="foliox_tm_main_title w-full max-w-[650px] h-auto clear-both my-0 mx-auto text-center">
+              <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
+                Services
+              </span>
+              <h3 className="text-[48px]">What I Do for My Clients</h3>
+            </div>
+            <div className="list w-full h-auto clear-both float-left mt-[70px]">
+              <ul className="ml-[-25px] flex flex-wrap">
+                {services.map((d) => (
+                  <li key={d.title} className="mb-[25px] pl-[25px] w-1/3">
+                    <ServicesCard info={d} />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="list w-full h-auto clear-both float-left mt-[70px]">
-            <ul className="ml-[-25px] flex flex-wrap">
-              {services.map((d) => (
-                <li key={d.title} className="mb-[25px] pl-[25px] w-1/3">
-                  <ServicesCard info={d} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );

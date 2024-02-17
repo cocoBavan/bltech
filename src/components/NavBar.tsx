@@ -15,7 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const NavBar = () => {
-  const [showNavBarBG, setShowNavBarBG] = useState(true);
+  const [showNavBarBG, setShowNavBarBG] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
@@ -56,7 +56,7 @@ const NavBar = () => {
                   width={200}
                   height={80}
                   className="max-w-[200px] max-h-[80px] transition-all duration-300"
-                  src="/assets/img/logo/logo.png"
+                  src="/assets/img/logo/logo2.png"
                   alt=""
                 />
               </Link>
@@ -107,7 +107,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="text-white font-poppins transition-all duration-300 hover:text-extra-color"
-                      href="#contact"
+                      href="https://www.linkedin.com/in/bavan-palan-83906555/"
                     >
                       Contact
                     </Link>
@@ -135,7 +135,7 @@ const NavBar = () => {
                   <li className="mr-[12px]">
                     <Link
                       className="text-white transition-all duration-300 hover:text-extra-color"
-                      href="#"
+                      href="https://www.youtube.com/@bavan"
                     >
                       <FontAwesomeIcon icon={faYoutube} />
                     </Link>
@@ -143,7 +143,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="text-white transition-all duration-300 hover:text-extra-color"
-                      href="#"
+                      href="https://www.linkedin.com/in/bavan-palan-83906555/"
                     >
                       <FontAwesomeIcon icon={faLinkedin} />
                     </Link>

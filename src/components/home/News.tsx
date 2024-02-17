@@ -4,27 +4,35 @@ import Link from "next/link";
 
 import "./css/news.css";
 
+function currentDate() {
+  const currentDate = new Date();
+  const options = { year: "numeric", month: "short", day: "2-digit" } as const;
+  const formattedDate = currentDate.toLocaleDateString("en-AU", options);
+
+  return formattedDate;
+}
+
 const items: NewsItem[] = [
   {
     image: "/assets/img/news/1.jpg",
-    tag: "Branding",
-    date: "January 27, 2023",
-    url: "#",
-    title: "When the musics over turn off the light now",
+    tag: "AI",
+    date: currentDate(),
+    url: "https://openai.com/sora",
+    title: "AI creates realistic videos",
   },
   {
     image: "/assets/img/news/2.jpeg",
-    tag: "Design",
-    date: "January 20, 2023",
-    url: "#",
-    title: "How good designers can collaborate better",
+    tag: "Cross Platform",
+    date: currentDate(),
+    url: "https://dotnet.microsoft.com/en-us/platform/support/policy/xamarin",
+    title: "Xamarin is kaput",
   },
   {
     image: "/assets/img/news/3.jpeg",
-    tag: "Cyber",
-    date: "January 12, 2023",
-    url: "#",
-    title: "How to be appreciated for your hard work",
+    tag: "VR",
+    date: currentDate(),
+    url: "https://www.abc.net.au/news/2024-02-15/how-virtual-reality-helps-quadraplegics-walk-again-spinal-injury/103464114",
+    title: "Paralysed feel walking",
   },
 ];
 
@@ -102,7 +110,7 @@ const News = () => {
             <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
               Blog
             </span>
-            <h3 className="text-[48px]">Latest Blog Posts</h3>
+            <h3 className="text-[48px]">Latest News</h3>
           </div>
           <div className="news_list w-full h-auto clear-both float-left mt-[70px]">
             <ul className="ml-[-25px] flex flex-wrap">

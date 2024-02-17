@@ -50,16 +50,16 @@ const TestimonialCard = ({ item }: { item: TestimonialItem }) => {
 const testimonials: TestimonialItem[] = [
   {
     testimonial: `
-						I rarely like to write reviews, but the Marketify team
-                        truly deserve a standing ovation for their customer
+						I rarely like to write reviews, but Bavan
+                        truly deserve a standing ovation for his customer
                         support, customisation and most importantly,
                         friendliness and professionalism. Many thanks once again
                         for everything and hope that I get to deal with you
                         again in the near future.
 	`,
     name: "Keita Smith",
-    company: "ABC Group",
-    imageUrl: "/assets/img/testimonials/1.jpeg",
+    company: "Pfizer",
+    imageUrl: "/assets/img/testimonials/3.jpeg",
   },
   {
     testimonial: `
@@ -67,25 +67,24 @@ const testimonials: TestimonialItem[] = [
                         are awesome and its good support they are giving. They
                         give an instant solution to our needs. Really awesome. I
                         will strongly recommend to my friends. Simply amazing
-                        team and amazing theme! Thank you from United States of
-                        America!
+                        team and amazing theme! Thank you from Macqurie Group!
 	`,
     name: "Mike Anderson",
-    company: "Vivaco Studi",
+    company: "Macquarie Bank",
     imageUrl: "/assets/img/testimonials/2.jpeg",
   },
   {
     testimonial: `
 						Loved the template design, documentation,
-                        customizability and the customer support from Marketify
+                        customizability and the customer support from BLtech
                         team! I am a noob in programming with very little
-                        knowledge about coding but the Marketify team helped me
+                        knowledge about coding but the BLTech team helped me
                         to launch my resume website successfully. Much
                         recommended!
 	`,
-    name: "Alan Walker",
-    company: "Web Designer",
-    imageUrl: "/assets/img/testimonials/3.jpeg",
+    name: "Laavanya",
+    company: "Invoice Scanner",
+    imageUrl: "/assets/img/testimonials/1.jpeg",
   },
 ];
 
