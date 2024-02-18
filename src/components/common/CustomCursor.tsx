@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -19,7 +19,7 @@ const CustomCursor = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0">
+    <div className="fixed top-0 left-0 cursor-bg">
       {/* <div
         className={`mouse-cursor cursor-outer ${
           isPointer ? "cursor-hover" : ""
@@ -27,7 +27,7 @@ const CustomCursor = () => {
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
       ></div> */}
       <div
-        className={`mouse-cursor cursor-inner ${
+        className={`mouse-cursor cursor-inner z-[10] ${
           isPointer ? "cursor-hover" : ""
         }`}
         style={{ left: `${position.x}px`, top: `${position.y}px` }}

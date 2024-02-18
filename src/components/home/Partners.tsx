@@ -20,7 +20,6 @@ const images = [
 
 const Partners = () => {
   const size = useWindowSize();
-  console.log(size.width);
 
   return (
     <div className="foliox_tm_section w-full h-auto clear-both float-left">
