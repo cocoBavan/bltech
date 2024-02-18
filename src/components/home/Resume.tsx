@@ -111,8 +111,10 @@ const Resume = () => {
               </div>
             </div>
             <div className="right w-1/2 pl-[50px]">
-              <div className="title w-full float-left mb-[60px]">
-                <h3 className="text-[36px] opacity-0">Education</h3>
+              <div className="title w-full float-left mb-0 xl:mb-[60px]">
+                <h3 className="text-[36px] opacity-0 h-0 xl:h-fit">
+                  Education
+                </h3>
               </div>
               <div className="resume_list w-full float-left">
                 <ul className="relative float-left">
