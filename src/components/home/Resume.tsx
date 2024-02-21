@@ -95,7 +95,9 @@ const Resume = () => {
             <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
               Resume
             </span>
-            <h3 className="text-[48px]">I Worked for Some Big Companies</h3>
+            <h3 className="text-[28px] lg:text-[48px]">
+              I Worked for Some Big Companies
+            </h3>
           </div>
           <div className="wrapper w-full h-auto flex mt-[65px]">
             <div className="left w-1/2 pr-[50px]">
@@ -111,8 +113,10 @@ const Resume = () => {
               </div>
             </div>
             <div className="right w-1/2 pl-[50px]">
-              <div className="title w-full float-left mb-[60px]">
-                <h3 className="text-[36px] opacity-0">Education</h3>
+              <div className="title w-full float-left mb-0 xl:mb-[60px]">
+                <h3 className="text-[36px] opacity-0 h-0 xl:h-fit">
+                  Education
+                </h3>
               </div>
               <div className="resume_list w-full float-left">
                 <ul className="relative float-left">

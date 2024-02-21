@@ -124,6 +124,12 @@ body {
   z-index: -1111;
 }
 
+@media (max-width: 600px) {
+  .cursor-bg {
+    display: none;
+  }
+}
+
 @media (max-width: 1600px) {
   .container {
     max-width: 1070px;

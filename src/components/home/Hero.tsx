@@ -32,12 +32,9 @@ const Hero = () => {
               </div>
               <div className="right w-1/2 pl-[80px]">
                 <Tilter>
-                  <Image
-                    style={{ objectFit: "contain" }}
-                    width={600}
-                    height={600}
-                    className="img tilt-effect max-w-[600px] max-h-[600px]"
-                    src="/assets/img/hero/avatar.png"
+                  <img
+                    className="tilt-effect max-w-[600px] max-h-[600px]"
+                    src="assets/img/hero/avatar.png"
                     alt=""
                   />
                 </Tilter>

@@ -26,12 +26,12 @@ const About = () => {
                 <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
                   About Me
                 </span>
-                <h3 className="text-[48px]">
+                <h3 className="text-[28px] lg:text-[48px]">
                   A Passionate Developer Who Loves to Code
                 </h3>
               </div>
-              <div className="wrapper w-full h-auto clear-both flex mt-[75px]">
-                <div className="left w-1/2 relative">
+              <div className="wrapper w-full h-auto clear-both flex flex-col lg:flex-row mt-[75px]">
+                <div className="lg:left w-full lg:w-1/2 relative">
                   <div className="big_image float-right relative">
                     <Tilter>
                       <img
@@ -77,7 +77,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="right w-1/2 pl-[90px] relative top-[30px]">
+                <div className="lg:right w-full lg:w-1/2 pl-[0px] lg:pl-[90px] relative top-[30px]">
                   <h3 className="title text-[30px] mb-[35px]">About Me</h3>
                   <p className="text">
                     As an enthusiastic app developer, I blend creativity with
@@ -89,8 +89,8 @@ const About = () => {
                     something amazing together!
                   </p>
                   <div className="list w-full clear-both float-left overflow-hidden rounded-[10px] border-solid border-[#625a7d] border-2 mt-[32px] mb-[40px]">
-                    <ul className="mt-[-2px] mr-[-10px] mb-[-2px] ml-[-2px] pt-[2px] float-left pl-[2px]">
-                      <li className="m-0 float-left w-1/2 border-solid border-[#625a7d] border-2 relative mt-[-2px] ml-[-2px] overflow-hidden">
+                    <ul className="mt-[-2px] mr-[-10px] mb-[-2px] ml-[-2px] pt-[2px] pl-[2px]">
+                      <li className="m-0 float-left w-full lg:w-1/2 border-solid border-[#625a7d] border-0 lg:border-l-2 relative mt-[-2px] ml-[-2px] overflow-hidden">
                         <ul className="item py-[25px] px-[35px]">
                           <li className="mb-[11px]">
                             <span className="font-poppins text-[16px] font-medium text-white inline-block">
@@ -116,7 +116,7 @@ const About = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="m-0 float-left w-1/2 border-solid border-[#625a7d] border-2 relative mt-[-2px] ml-[-2px] overflow-hidden">
+                      <li className="m-0 float-left w-full lg:w-1/2 border-solid border-[#625a7d] border-0 lg:border-l-2 relative mt-[-2px] ml-[-2px] overflow-hidden">
                         <ul className="item py-[25px] px-[35px]">
                           <li className="mb-[11px]">
                             <span className="font-poppins text-[16px] font-medium text-white inline-block">
@@ -140,7 +140,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="foliox_tm_button">
+                  <div className="foliox_tm_button flex justify-center">
                     <Link href="/assets/files/BavanResume.pdf" download>
                       <span>Download Resume</span>
                     </Link>

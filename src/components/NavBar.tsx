@@ -17,6 +17,11 @@ import {
 const NavBar = () => {
   const [showNavBarBG, setShowNavBarBG] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsMobileOpen(!isMobileOpen);
+  };
 
   const controlNavbar = () => {
     //console.log(window.scrollY, lastScrollY);
@@ -151,6 +156,115 @@ const NavBar = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="foliox_tm_mobile_menu w-full h-auto fixed top-0 left-0 hidden z-[10]">
+        <div className="mobile_menu_inner w-full h-auto clear-both float-left bg-[#1e1345] border-solid border-[rgba(255,255,255,.1)] border py-[10px] px-[20px]">
+          <div className="mobile_in w-full h-auto clear-both float-left flex items-center justify-between">
+            <div className="logo">
+              <a href="#">
+                <img
+                  className="max-w-[120px] max-h-[70px]"
+                  src="/assets/img/logo/logo2.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="trigger leading-[0]">
+              <button
+                onClick={handleClick}
+                className="flex flex-col justify-center items-center"
+              >
+                <span
+                  className={`bg-white block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm ${
+                      isMobileOpen
+                        ? "rotate-45 translate-y-1"
+                        : "-translate-y-0.5"
+                    }`}
+                ></span>
+                <span
+                  className={`bg-white block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm my-0.5 ${
+                      isMobileOpen ? "opacity-0" : "opacity-100"
+                    }`}
+                ></span>
+                <span
+                  className={`bg-white block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm ${
+                      isMobileOpen
+                        ? "-rotate-45 -translate-y-1"
+                        : "translate-y-0.5"
+                    }`}
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          className={`dropdown w-full h-auto clear-both float-left bg-[#1e1345] ${
+            isMobileOpen ? "" : "hidden"
+          }`}
+        >
+          <div className="dropdown_inner w-full h-auto clear-both float-left py-[25px] px-[40px]">
+            <ul className="anchor_nav">
+              <li className="current float-left w-full">
+                <a
+                  onClick={handleClick}
+                  className="text-white inline-block p-0 font-medium"
+                  href="#home"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="float-left w-full">
+                <a
+                  onClick={handleClick}
+                  className="text-white inline-block p-0 font-medium"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li className="float-left w-full">
+                <a
+                  onClick={handleClick}
+                  className="text-white inline-block p-0 font-medium"
+                  href="#portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li className="float-left w-full">
+                <a
+                  onClick={handleClick}
+                  className="text-white inline-block p-0 font-medium"
+                  href="#service"
+                >
+                  Service
+                </a>
+              </li>
+              <li className="float-left w-full">
+                <a
+                  onClick={handleClick}
+                  className="text-white inline-block p-0 font-medium"
+                  href="#blog"
+                >
+                  News
+                </a>
+              </li>
+              <li className="float-left w-full">
+                <a
+                  onClick={handleClick}
+                  className="text-white inline-block p-0 font-medium"
+                  href="https://www.linkedin.com/in/bavan-palan-83906555/"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
