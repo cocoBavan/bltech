@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import "./css/counter.css";
 import Tilter from "../common/Tilter";
-import CountUp from "react-countup";
 import { useInView } from "framer-motion";
 
 interface CounterItem {
@@ -22,14 +21,7 @@ const CounterCard = ({ item }: { item: CounterItem }) => {
           className="list_inner tilt-effect w-full h-auto clear-both  relative bg-[#432d92] rounded-[10px] p-[70px] flex items-center justify-center"
         >
           <h3 className="text-[60px] text-extra-color">
-            {isInView && (
-              <CountUp start={0} end={item.count} delay={0.5}>
-                {({ countUpRef, start }) => (
-                  <span className="tm_counter" ref={countUpRef} />
-                )}
-              </CountUp>
-            )}
-            {!isInView && <span className="tm_counter">0</span>}
+            <span className="tm_counter">{item.count}</span>
           </h3>
           <span className="title text-[18px] text-white font-poppins font-medium inline-block pl-[26px]">
             {item.title}

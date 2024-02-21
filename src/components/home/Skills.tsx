@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 
 import "./css/skills.css";
 import ProgressBar from "@ramonak/react-progress-bar";
-import CountUp from "react-countup";
 import { useInView } from "framer-motion";
 import Reveal from "../common/Reveal";
 
@@ -34,14 +33,7 @@ const SkillItem = ({ skill }: { skill: Skill }) => {
       <span>
         <span className="label opened">{skill.title}</span>
         <span className="number" style={{ right: "5%" }}>
-          {isInView && (
-            <CountUp start={0} end={skill.percentage}>
-              {({ countUpRef, start }) => (
-                <span className="tm_counter" ref={countUpRef} />
-              )}
-            </CountUp>
-          )}
-          {!isInView && 0}%
+          <span className="tm_counter">{skill.percentage}</span>%
         </span>
       </span>
       {isInView && (
