@@ -24,7 +24,7 @@ const TestimonialCard = ({ item }: { item: TestimonialItem }) => {
         />
       </div>
       <div className="text mb-[60px]">
-        <p className="text-[30px] italic leading-[1.6] text-white">
+        <p className="text-[20px] lg:text-[30px] italic leading-[1.6] text-white">
           {item.testimonial}
         </p>
       </div>
@@ -119,7 +119,7 @@ const Testimonials = () => {
             <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
               Testimonials
             </span>
-            <h3 className="text-[48px]">What Clients Say</h3>
+            <h3 className="text-[28px] lg:text-[48px]">What Clients Say</h3>
           </div>
           <div className="list_wrapper w-full h-auto clear-both float-left relative mt-[50px]">
             <div className="total w-full h-auto clear-both float-left relative">

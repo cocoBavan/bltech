@@ -110,7 +110,7 @@ const News = () => {
             <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
               Blog
             </span>
-            <h3 className="text-[48px]">Latest News</h3>
+            <h3 className="text-[28px] lg:text-[48px]">Latest News</h3>
           </div>
           <div className="news_list w-full h-auto clear-both float-left mt-[70px]">
             <ul className="ml-[-25px] flex flex-wrap">

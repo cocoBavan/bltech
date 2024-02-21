@@ -98,7 +98,9 @@ const Portfolio = () => {
               <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
                 Portfolio
               </span>
-              <h3 className="text-[48px]">What I Do for My Clients</h3>
+              <h3 className="text-[28px] lg:text-[48px]">
+                What I Do for My Clients
+              </h3>
             </div>
             <div className="portfolio_filter w-full h-auto clear-both text-center mt-[60px] mb-[55px]"></div>
             <div

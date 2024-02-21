@@ -76,12 +76,12 @@ const Skills = () => {
               <span className="text-[21px] font-poppins text-extra-color font-medium inline-block mb-[5px]">
                 Skills
               </span>
-              <h3 className="text-[48px]">
+              <h3 className="text-[28px] lg:text-[48px]">
                 I Work Hard to Improve My Skills Regularly
               </h3>
             </div>
-            <div className="list w-full h-auto clear-both flex mt-[47px]">
-              <div className="left w-1/2 pr-[67px]">
+            <div className="list w-full h-auto clear-both flex flex-col lg:flex-row mt-[47px]">
+              <div className="lg:left w-full lg:w-1/2 lg:pr-[67px]">
                 <div
                   className="dodo_progress wow fadeInUp w-full h-auto clear-both float-left pt-[30px] overflow-hidden"
                   data-wow-duration="1s"
@@ -91,7 +91,7 @@ const Skills = () => {
                   ))}
                 </div>
               </div>
-              <div className="right w-1/2 pl-[67px]">
+              <div className="lg:right w-full lg:w-1/2 lg:pl-[67px]">
                 <div
                   className="dodo_progress wow fadeInUp w-full h-auto clear-both float-left pt-[30px] overflow-hidden"
                   data-wow-duration="1s"
